@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Packager</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            padding: 10px 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+        }
+
+        h3 {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Packing</h1>
+<h2>Available packs:</h2>
+<h3 id="packs"></h3>
+<h2>Order items</h2>
+<form id="order-form">
+    <input type="text" id="order-input" placeholder="Enter required number of items">
+    <button type="submit">Order</button>
+</form>
+<h2>Change available packs</h2>
+<form id="write-form">
+    <input type="text" id="write-input" placeholder="Enter numbers separated by comma">
+    <button type="submit">Change packs</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
